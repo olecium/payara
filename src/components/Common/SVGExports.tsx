@@ -1,4 +1,4 @@
-export const TickIcon = () => {
+export const EnabledIcon = () => {
     return (
         <svg 
             className="enabled-icon"
@@ -16,7 +16,7 @@ export const TickIcon = () => {
         </svg>
     );
 }
-export const NotAvailableIcon = () => {
+export const DisabledIcon = () => {
     return (
         <svg 
             className="disabled-icon"

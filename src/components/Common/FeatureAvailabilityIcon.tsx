@@ -1,5 +1,5 @@
 import React, { JSX } from "react"
-import { NotAvailableIcon, TickIcon } from "./SVGExports"
+import { DisabledIcon, EnabledIcon } from "./SVGExports"
 
 interface IFeatureAvalabilityIcon{
     available: boolean
@@ -7,7 +7,7 @@ interface IFeatureAvalabilityIcon{
 
 const FeatureAvailabilityIcon: React.FC<IFeatureAvalabilityIcon> = (props: IFeatureAvalabilityIcon): JSX.Element => {
   return (
-    <>{props.available ? <TickIcon/> : <NotAvailableIcon/>}</>
+    <>{props.available ? <EnabledIcon/> : <DisabledIcon/>}</>
   )
 }
 
