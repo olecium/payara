@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import FeatureAvailabilityIcon from '../components/FeatureAvailabilityIcon';
+import FeatureAvailabilityIcon from '../components/Common/FeatureAvailabilityIcon';
 
 const meta = {
   title: 'OurPlan/Feature-Icon',

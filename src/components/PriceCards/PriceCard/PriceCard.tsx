@@ -2,7 +2,7 @@ import React, { JSX } from "react"
 import './_priceCard.less'
 import PlanFeatures from "../PlanFeatures/PlanFeatures"
 import { IPlan } from "../../../interfaces/data-interfaces"
-import Button from "../../Generic/Button/Button"
+import Button from "../../Common/Button/Button"
 
 interface IPriceCard{
   plan: IPlan

@@ -1,5 +1,5 @@
 import React, { JSX } from "react"
-import FeatureAvalabilityIcon from '../../FeatureAvailabilityIcon'
+import FeatureAvalabilityIcon from '../../Common/FeatureAvailabilityIcon'
 import { IFeature } from "../../../interfaces/data-interfaces"
 
 interface IPlanFeature{
