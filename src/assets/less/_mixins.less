@@ -1,0 +1,53 @@
+
+// button mixins
+.general-button(){
+    border-radius: 5px;
+    cursor: pointer;
+    height: 44px;
+}
+
+// light
+.light-button-primary(){
+    border: 0 none;
+    color: @light-surface-primary;
+    background-color: @light-button-primary-color;
+}
+
+.light-button-primary-hover(){
+    background-color: @light-button-primary-hover-color;
+    box-shadow: 0px 4px 14px 0px @light-button-shadow-color;
+}
+
+.light-button-secondary(){
+    border: 2px solid @light-surface-secondary;
+    color: @light-surface-secondary;
+    background-color: @light-surface-contrast;    
+}
+
+.light-button-secondary-hover(){
+    box-shadow: 0px 4px 14px 0px @light-button-shadow-color;
+    background-color: @light-surface-contrast;
+}
+
+// dark
+.dark-button-primary(){
+    background-color: @dark-button-primary-color;
+    border: 0 none;
+    color: @light-surface-secondary;
+}
+
+.dark-button-primary-hover(){
+    box-shadow: 0px 4px 14px 0px @dark-button-shadow-color;
+    background-color: @light-surface-contrast;
+}
+
+.dark-button-secondary(){
+    background-color: @dark-button-secondary-color;
+    border: 2px solid @dark-text-contrast;
+    color: @dark-text-contrast;
+}
+
+.dark-button-secondary-hover(){
+    box-shadow: 0px 4px 14px 0px @dark-button-shadow-color;
+    background-color: @dark-button-secondary-hover-color;
+}
