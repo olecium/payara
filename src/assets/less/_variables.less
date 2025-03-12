@@ -1,0 +1,94 @@
+@mobile-width: 320px;
+@tablet-width: 768px;
+@desktop-width: 1300px;
+
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+@main-font: "Satoshi", Arial, sans-serif;
+
+// light general
+// surface
+@light-surface-primary: #f5f3ff;//=
+@light-surface-secondary: #6d28d9;//=
+@light-surface-contrast: #EDE9FE;//=
+// text
+@light-text-primary: #2E1065; //=
+@light-text-secondary: #8B5CF6;//=
+@light-text-contrast: #64748B;//=
+
+// dark general
+// surface
+@dark-surface-primary: #1E293B;//=
+@dark-surface-secondary: #5B21B6;
+@dark-surface-contrast: #334155;//=
+// text
+@dark-text-primary: #F8FAFC;
+@dark-text-secondary: #5B21B6;
+@dark-text-contrast: #c4b5fd; //=
+
+// buttons
+// light
+@light-button-primary-color: #f97316;
+@light-button-primary-hover-color: #ea580c;
+@light-button-shadow-color: #A78BFA;//=
+
+// dark
+@dark-button-primary-color: #f5f3ff;
+@dark-button-shadow-color: #020617;//=
+
+@dark-button-secondary-color: #475569;//=
+@dark-button-secondary-hover-color: #334155;
+
+// button mixins
+.general-button(){
+    border-radius: 5px;
+    cursor: pointer;
+    height: 44px;
+}
+
+// light
+.light-button-primary(){
+    border: 0 none;
+    color: @light-surface-primary;
+    background-color: @light-button-primary-color;
+}
+
+.light-button-primary-hover(){
+    background-color: @light-button-primary-hover-color;
+    box-shadow: 0px 4px 14px 0px @light-button-shadow-color;
+}
+
+.light-button-secondary(){
+    border: 2px solid @light-surface-secondary;
+    color: @light-surface-secondary;
+    background-color: @light-surface-contrast;    
+}
+
+.light-button-secondary-hover(){
+    box-shadow: 0px 4px 14px 0px @light-button-shadow-color;
+    background-color: @light-surface-contrast;
+}
+
+// dark
+.dark-button-primary(){
+    background-color: @dark-button-primary-color;
+    border: 0 none;
+    color: @light-surface-secondary;
+}
+
+.dark-button-primary-hover(){
+    box-shadow: 0px 4px 14px 0px @dark-button-shadow-color;
+    background-color: @light-surface-contrast;
+}
+
+.dark-button-secondary(){
+    background-color: @dark-button-secondary-color;
+    border: 2px solid @dark-text-contrast;
+    color: @dark-text-contrast;
+}
+
+.dark-button-secondary-hover(){
+    box-shadow: 0px 4px 14px 0px @dark-button-shadow-color;
+    background-color: @dark-button-secondary-hover-color;
+}

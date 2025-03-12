@@ -1,34 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './assets/less/style.less'
+import OurPlan from './components/Pages/OurPlanPage/OurPlanPage'
+import { Theme } from './interfaces/enums'
+import Button from './components/Generic/Button/Button'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState<Theme>(Theme.light)
+
+  const toggleTheme = (): void => {
+    setTheme(theme === Theme.dark ? Theme.light : Theme.dark)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className={`theme-${theme.valueOf()}`}>
+        <Button 
+            clickHandler={toggleTheme}
+            btnClassName="theme-toggle-button"
+            text={theme === Theme.dark ? `${Theme.light.valueOf()}en` : `${Theme.dark.valueOf()}en`}
+        />
+      <OurPlan/>
+    </div>
   )
 }
 

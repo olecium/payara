@@ -1,0 +1,122 @@
+{
+    "pricePlans": [
+        {
+            "title": "Freebie",
+            "description": "Ideal for individuals who need quick access to basic features.",
+            "price": 0,
+            "features": [
+                {
+                    "description": "20,000+ of PNG & SVG graphics",
+                    "enabled": true
+                },
+                {
+                    "description": "Access to 100 million stock image",
+                    "enabled": true
+                },
+                {
+                    "description": "Upload custom icons and fonts",
+                    "enabled": false
+                },
+                {
+                    "description": "Unlimited Sharing",
+                    "enabled": false
+                },
+                {
+                    "description": "Upload graphics & video in up to 4k",
+                    "enabled": false
+                },
+                {
+                    "description": "Unlimited Project",
+                    "enabled": false
+                },
+                {
+                    "description": "Instant Access to our design system",
+                    "enabled": false
+                },
+                {
+                    "description": "Create teams to collaborate on designs",
+                    "enabled": false
+                }
+            ]
+        },
+        {
+            "title": "Professional",
+            "description": "Ideal for individuals who who need advanced features and tools for client work.",
+            "price": 25,
+            "focus": true,
+            "features": [
+                {
+                    "description": "20,000+ of PNG & SVG graphics",
+                    "enabled": true
+                },
+                {
+                    "description": "Access to 100 million stock image",
+                    "enabled": true
+                },
+                {
+                    "description": "Upload custom icons and fonts",
+                    "enabled": true
+                },
+                {
+                    "description": "Unlimited Sharing",
+                    "enabled": true
+                },
+                {
+                    "description": "Upload graphics & video in up to 4k",
+                    "enabled": true
+                },
+                {
+                    "description": "Unlimited Project",
+                    "enabled": true
+                },
+                {
+                    "description": "Instant Access to our design system",
+                    "enabled": false
+                },
+                {
+                    "description": "Create teams to collaborate on designs",
+                    "enabled": false
+                }
+            ]
+        },
+        {
+            "title": "Enterprise",
+            "description": "Ideal for businesses who need personalized services and security for large teams.",
+            "price": 100,
+            "features": [
+                {
+                    "description": "20,000+ of PNG & SVG graphics",
+                    "enabled": true
+                },
+                {
+                    "description": "Access to 100 million stock image",
+                    "enabled": true
+                },
+                {
+                    "description": "Upload custom icons and fonts",
+                    "enabled": true
+                },
+                {
+                    "description": "Unlimited Sharing",
+                    "enabled": true
+                },
+                {
+                    "description": "Upload graphics & video in up to 4k",
+                    "enabled": true
+                },
+                {
+                    "description": "Unlimited Project",
+                    "enabled": true
+                },
+                {
+                    "description": "Instant Access to our design system",
+                    "enabled": true
+                },
+                {
+                    "description": "Create teams to collaborate on designs",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+.price-card{
+    background-color: @light-surface-contrast;
+    padding: 40px 24px;
+    border-radius: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    .price-card-title{
+        margin: 0;
+        font-size: 2rem;
+        color: @light-text-primary;
+    }
+    .price-card-description{
+        font-size: 1rem;
+        color: @dark-surface-contrast;
+    }
+    .price-card-price{
+        font-size: 3rem;
+        color: @light-text-primary;
+        margin: 0.5em 0;
+        font-weight: bold;
+        line-height: 1;
+
+        span{
+            position: relative;
+            font-size: 1rem;
+            color: @dark-surface-contrast;
+            top: -0.8em;
+            font-weight: normal;
+        }
+    }
+    .price-card-features{    
+        margin: 0;
+        padding: 0;    
+        list-style-type: none;
+    }
+    .price-card-feature{   
+        margin: 1em 0;
+        padding: 0;    
+        font-size: 1rem;
+        color: @light-text-primary;
+        display: flex;
+        align-items: center;
+
+        svg{
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
+            min-height: 25px;
+            fill: @light-text-secondary;
+        }
+
+        &--not-available{
+            color: @light-button-shadow-color;
+            
+            svg{
+                fill: @dark-text-contrast;
+            }
+        }
+    }
+
+    &--focus{
+        background-color: @light-surface-secondary;
+        color: @light-surface-primary;
+        
+        box-shadow: 0px 4px 44px 0px @light-button-shadow-color;
+
+        .price-card-title,
+        .price-card-description,
+        .price-card-price,
+        .price-card-price span{
+            color: inherit;
+        }
+
+        .price-card-feature{
+            color: inherit;
+    
+            svg{
+                fill: @light-surface-primary;
+            }
+
+            &--not-available{
+                color: @light-button-shadow-color;
+
+                svg{
+                    fill: @light-text-secondary;
+                }
+            }
+    
+        }
+    }
+}
+
+.theme-dark{
+    .price-card{
+        background-color: @dark-surface-contrast;
+        color: @light-surface-primary;
+
+        .price-card-title,
+        .price-card-description,
+        .price-card-price,
+        .price-card-price span{
+            color: inherit;
+        }
+
+        .price-card-feature{
+            color: inherit;
+    
+            svg{
+                fill: @dark-text-contrast;
+            }
+
+            &--not-available{
+                color: #94A3B8;
+
+                svg{
+                    fill: @light-text-contrast;
+                }
+            }
+    
+        }
+
+        
+        &--focus{
+            background-color: @light-surface-secondary;
+            color: @light-surface-primary;
+            box-shadow: 0px 4px 44px 0px @dark-button-shadow-color;
+            
+            .price-card-features{
+                color: #f1f5f9;
+            }
+
+            .price-card-feature{                
+                svg{
+                    fill: #ddd6fe;
+                }
+                &--not-available{
+                    color: @light-button-shadow-color;
+                    svg{
+                        fill: @light-text-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: @tablet-width) {
+    .price-card{
+        &--focus{
+            transform: scale(1.07);
+        }        
+    }
+  }
+
+@media (min-width: @desktop-width){
+    .price-card{
+        .price-card-feature{               
+            margin: 10px 0; 
+
+                svg{
+                    height: 32px;
+                    width: 32px;
+                    min-height: 32px;
+                    min-width: 32px;
+                }
+            }
+    }
+}

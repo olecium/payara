@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/payara",
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: '@import "src/assets/less/style.less";',
+      },
+    },
+  },
 })
