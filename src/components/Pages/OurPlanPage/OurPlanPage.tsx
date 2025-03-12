@@ -1,6 +1,6 @@
 import React, { JSX } from "react"
 import './_ourPlan.less'
-import PriceCards from "./PriceCards"
+import PriceCards from "../../PriceCards/PriceCards"
 
 const OurPlanPage: React.FC = ():JSX.Element => {
   return (      
