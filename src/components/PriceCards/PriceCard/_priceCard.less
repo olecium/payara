@@ -15,18 +15,35 @@
         color: @dark-surface-contrast;
     }
     .price-card-price{
-        font-size: 3rem;
-        color: @light-text-primary;
-        margin: 0.5em 0;
-        font-weight: bold;
-        line-height: 1;
+        display: flex;
+        align-items: center;
 
-        span{
-            position: relative;
+        .price-card-price-number{
+            font-size: 3rem;
+            color: @light-text-primary;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .price-card-price-range{
+            margin-left: 0.5em;
             font-size: 1rem;
-            color: @dark-surface-contrast;
-            top: -0.8em;
             font-weight: normal;
+            
+            button{
+                color: @dark-surface-contrast;
+                cursor: pointer;
+                border: 0 none;
+                background: transparent none;
+
+                &:disabled{
+                    cursor: default;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
     .price-card-features{    
@@ -68,8 +85,9 @@
 
         .price-card-title,
         .price-card-description,
-        .price-card-price,
-        .price-card-price span{
+        .price-card-price .price-card-price-number,
+        .price-card-price .price-card-price-range,
+        .price-card-price .price-card-price-range button{
             color: inherit;
         }
 
@@ -99,8 +117,9 @@
 
         .price-card-title,
         .price-card-description,
-        .price-card-price,
-        .price-card-price span{
+        .price-card-price .price-card-price-number,
+        .price-card-price .price-card-price-number,
+        .price-card-price .price-card-price-number button{
             color: inherit;
         }
 
