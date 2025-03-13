@@ -17,12 +17,16 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
-        plan: data.pricePlans[1]
-    },
+        plan: data.pricePlans[1],
+        range: 1,
+        toggleMonthYearPrice: () => undefined
+    }
 };
 
 export const Secondary: Story = {
     args: {
-        plan: data.pricePlans[0]
+        plan: data.pricePlans[0],
+        range: 1,
+        toggleMonthYearPrice: () => undefined
     },
 };
